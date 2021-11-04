@@ -11,12 +11,21 @@ int main()
 
 	printf("N = \t");
 	scanf("%ld", &N);
+	
+	if ((N == 10) || (N == 100) || (N == 1000) || (N == 10000) || (N == 100000) || (N == 1000000))
+  {}
+  else
+  {
+		printf("Error: invalid input N\n");
+		return 0;
+	}
+
 	printf("min = \t");
 	scanf("%lf", &min);
 	printf("max = \t");
 	scanf("%lf", &max);
 
-	if ((N <= 0) || (min <= 0.0) || (max <= 0.0) || (max <= min))
+	if ((min <= 0.0) || (max <= 0.0) || (max <= min))
 	{
 		printf("Error: invalid input");
 		return 0;
